@@ -112,3 +112,31 @@ body.home-body {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f3f3f3;
 }
+
+
+/* footer + creditos */
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 215, 215);
+    padding:10px 0px 5px;
+}
+
+.footer-content p {
+    color: #000;
+    font-size: 20px;
+}
+
+.footer-content p span a {
+    text-decoration: none;
+    color: #009dff;
+    transition: .2s;
+}
+
+
+.footer-content p span a:hover {
+    color: #36a0e6;
+
+}
