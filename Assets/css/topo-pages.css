@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+
+
+/* menu topo */
+
+.id-topo {
+    background-color: #ffffff;
+}
+
+.oi{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.user .usuario-icon{
+    font-size: 34px;
+}
+
+.usuario-status{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario-status .usuario-name{
+    font-size: 20px;
+}
+
+.usuario-status .condicao-usuario{
+    font-size: 14px;
+}

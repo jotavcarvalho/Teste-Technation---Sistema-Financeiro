@@ -1,0 +1,80 @@
+::selection {
+    background-color: #009dff;
+    color: #f3f3f3;
+}
+
+.limite-largura {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+table.show-notas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0px 30px;
+}
+
+table.show-notas thead {
+    background-color: #009dff;
+    color: #ffffff;
+}
+
+table.show-notas th {
+    padding: 12px;
+}
+
+table.show-notas tbody tr:nth-child(odd) {
+    background-color: #d6d6d6;
+}
+
+table.show-notas td {
+    padding: 8px;
+    text-align: center;
+}
+
+table.show-notas tbody tr {
+    transition: .2s;
+}
+
+table.show-notas tbody tr:hover {
+    background-color: #9dcff0;
+}
+
+/* div dos filtros + select */
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0px 10px;
+    margin: 20px 0px 10px;
+}
+
+.filtros label {
+    color: #282728;
+    font-weight: 800;
+    margin: 0px 10px 0px 80px;
+}
+
+.filtros select {
+    background-color: #b5d7ed;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+
+/*trabalhando com os elementos filhos para posicionar de forma uniforme*/
+
+.filtros label:nth-child(1){
+    margin-right: 30px;
+}
+
+.filtros label:nth-child(7){
+    margin-right: 90px;
+}
+

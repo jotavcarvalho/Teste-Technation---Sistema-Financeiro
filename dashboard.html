@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/topo-pages.css">
+    <link rel="stylesheet" href="./Assets/css/tabela.css">
+    <link rel="stylesheet" href="./Assets/css/dashboard.css">
+    <link rel="shortcut icon" href="./Assets/img/favicon.png" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="header-content">
+        <nav class="menu-lateral">
+            <div class="btn-menu">
+                <i class="bi bi-list" id="btn-icon-menu"></i>
+            </div>
+            <ul>
+                <li class="iten-menu">
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house-door"></i></span>
+                        <span class="link-iten">Home</span>
+                    </a>
+                </li>
+                <li class="iten-menu">
+                    <a href="notas-fiscais.html">
+                        <span class="icon"><i class="bi bi-receipt"></i></span>
+                        <span class="link-iten">Notas Fiscais</span>
+                    </a>
+                </li>
+                <li class="iten-menu active">
+                    <a href="dashboard.html">
+                        <span class="icon"><i class="bi bi-speedometer2"></i></span>
+                        <span class="link-iten">Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="id-topo">
+            <div class="oi">
+                <h1 class="title-page">Dashboard</h1>
+                <div class="user">
+                    <span class="usuario-icon"><i class="bi bi-person-circle"></i></span>
+                    <div class="usuario-status">
+                        <span class="usuario-name">Usuário</span>
+                        <span class="condicao-usuario">Logado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dashboard limite-largura">
+        <div class="filtros">
+            <label for="filtro-indicadores-mes">Filtrar por Mês:</label>
+            <select id="filtro-indicadores-mes">
+                <option value="">Selecione o Mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <label for="filtro-indicadores-trimestre">Filtrar por Trimestre:</label>
+            <select id="filtro-indicadores-trimestre">
+                <option value="">Selecione o Trimestre</option>
+                <option value="01">Primeiro Trimestre</option>
+                <option value="02">Segundo Trimestre</option>
+                <option value="03">Terceiro Trimestre</option>
+                <option value="04">Quarto Trimestre</option>
+            </select>
+        </div>
+        <table class="show-notas">
+            <thead>
+                <tr>
+                    <th>Valor Total das Notas Emitidas</th>
+                    <th>Valor Total das Notas Sem Cobrança Realizada</th>
+                    <th>Valor Total das Notas em Atraso</th>
+                    <th>Valor Total das Notas a Vencer</th>
+                    <th>Valor Total das Notas Pagas</th>
+                </tr>
+            </thead>
+            <tbody id="exibe-valores">
+                <tr>
+                    <td id="valor-total-notas"></td>
+                    <td id="valor-sem-cobranca"></td>
+                    <td id="valor-inadimplencia"></td>
+                    <td id="valor-a-vencer"></td>
+                    <td id="valor-pagas"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="graficos-dashboard">
+        <h1>Gráficos de Controle sobre Inadimplência e Receita Anual</h1>
+        <div class="agrupa-graficos">
+            <div class="grafico-atraso limite-largura">
+                <canvas class="atraso"></canvas>
+            </div>
+            <div class="grafico-receita limite-largura">
+                <canvas class="receita"></canvas>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            atualizarDashboard();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./Assets/js/colecao.js"></script>
+    <script src="./Assets/js/dashboard.js"></script>
+    <script src="./Assets/js/side-menu.js"></script>
+</body>
+
+</html>

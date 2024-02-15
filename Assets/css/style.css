@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Riot&display=swap');
+
+::selection {
+    background-color: #009dff;
+    color: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.home-body {
+    background: linear-gradient(to bottom right, #85d7ff, #c7eafd);
+}
+
+.header-content {
+    height: 100%;
+}
+
+.menu-lateral {
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 2px 0px 0px #009dff;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-lateral.expand {
+    width: 250px;
+}
+
+.btn-menu {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-menu i {
+    color: #f3f3f3;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-lateral ul {
+    height: 100%;
+    list-style: none;
+}
+
+.menu-lateral ul li.iten-menu {
+    transition: .4s;
+}
+
+.menu-lateral ul li.active {
+    background-color: #009dff;
+}
+
+.menu-lateral ul li.iten-menu:hover {
+    background-color: #009dff;
+}
+
+.menu-lateral .iten-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    color: #f3f3f3;
+    transition: .5s;
+}
+
+.menu-lateral .link-iten {
+    margin-left: 80px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.menu-lateral.expand .link-iten {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+.menu-lateral .iten-menu a .icon i {
+    font-size: 40px;
+}
+
+
+/* banner home */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.banner h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-title {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #f3f3f3;
+}

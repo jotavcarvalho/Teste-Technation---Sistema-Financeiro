@@ -1,0 +1,40 @@
+.graficos-dashboard{
+    margin: 40px 0px;
+}
+
+.graficos-dashboard h1{
+    position: relative;
+    text-align: center;
+    padding:40px 0px;
+    font-size: 32px;
+    color:rgb(10, 1, 22);
+}
+
+.graficos-dashboard h1::before{
+    position: absolute;
+    content: '';
+    top:90px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: #5bbcfc;  
+}
+
+
+/* display flex para os graficos serem exibidos lado a lado */
+
+.agrupa-graficos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 80%;
+}
+
+.grafico-atraso, .grafico-receita{
+    width: 700px;
+    height: 400px;
+}
